@@ -12,7 +12,7 @@ import java.util.UUID;
 public class PaymentController {
    @Value("${server.port}")
     private String serverPort;
-
+    //RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。
     @RequestMapping(value = "payment/consul")
     public String paymentZk() {
         return "SpringCloud with consul:" + serverPort + "\t" + UUID.randomUUID().toString();
