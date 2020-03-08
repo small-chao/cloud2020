@@ -29,6 +29,7 @@ public class PaymentController {
     private DiscoveryClient discoveryClient;
 
     @PostMapping("/payment/create")
+    //@RequestBody主要用来接收前端传递给后端的json字符串中的数据的(请求体中的数据的)；
     public CommonResult create(@RequestBody Payment payment){
         int result=paymentService.create(payment);
         System.out.println("**********插入结果:"+result);
@@ -38,6 +39,7 @@ public class PaymentController {
         return new CommonResult(444,"插入数据库失败",null);
     }
     @GetMapping("/payment/get/{id}")
+    //通过 @PathVariable 可以将 URL 中占位符参数绑定到控制器处理方法的入参中：URL 中的 {xxx} 占位符可以通过@PathVariable(“xxx“) 绑定到操作方法的入参中。
     public CommonResult getPaymentById(@PathVariable("id") long id){
         Payment payment=paymentService.getPaymentById(id);
         System.out.println("**********插入结果:"+payment);
