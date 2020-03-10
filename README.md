@@ -6,4 +6,5 @@
 # Hystrix断路器 服务降级（可全局设置解决代码混乱和膨胀） 服务熔断（断路器：closed-open-halfopen） 服务限流  服务监控HystrixDashBoardHystrix
 # Gateway服务网关（（由路由->断言->过滤器）（核心逻辑：路由转发+执行过滤链）  路由转发    网关路由的配置（在yml中配置或代码注入）  动态路由  ）  断言predicate(Route Predicate)  过滤器（gatewayFilter和自定义全局globalFilter）  
 # config服务配置（分布式配置中心） 服务端和客户端的配置 客户端的动态刷新
-#Bus消息总线   广播刷新全局  定点刷新通知 
+#Bus消息总线 （通过rabbitmq）  广播刷新全局  定点刷新通知 
+# stream消息驱动(屏蔽型)底层消息中间件的养异（mq的差异）,降低切换成本，统一消息的编程模型）  (binder绑定器  channel频道 source和sink)    消费者和生产者的构建   分组消费与持久化
