@@ -1,4 +1,4 @@
-#跟着阳哥的教程来敲的springcloud的学习
+#跟着阳哥的教程来敲的，springcloud的学习
 # Eureka服务注册的基础、单机、集群、actuator微服务信息完善（改主机名称用instance+本地修改）、服务发现discover和 Eureka的自我保护
 # consul服务注册的配置和使用，zookeeper未学
 # Ribbon负载均衡服务调用，基础+源码实现（cas+自寻锁）
