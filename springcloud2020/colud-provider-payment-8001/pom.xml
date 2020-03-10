@@ -11,6 +11,11 @@
 
     <artifactId>colud-provider-payment-8001</artifactId>
     <dependencies>
+        <!--包含了sleuth和zipkin-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
