@@ -5,4 +5,5 @@
 # OpenFeign服务接口的使用、超时控制和日志打印功能
 # Hystrix断路器 服务降级（可全局设置解决代码混乱和膨胀） 服务熔断（断路器：closed-open-halfopen） 服务限流  服务监控HystrixDashBoardHystrix
 # Gateway服务网关（（由路由->断言->过滤器）（核心逻辑：路由转发+执行过滤链）  路由转发    网关路由的配置（在yml中配置或代码注入）  动态路由  ）  断言predicate(Route Predicate)  过滤器（gatewayFilter和自定义全局globalFilter）  
-# config服务配置（分布式配置中心）
+# config服务配置（分布式配置中心） 服务端和客户端的配置 客户端的动态刷新
+#Bus消息总线   广播刷新全局  定点刷新通知 
