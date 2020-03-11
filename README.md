@@ -9,3 +9,5 @@
 #Bus消息总线 （通过rabbitmq）  广播刷新全局  定点刷新通知 
 # stream消息驱动(屏蔽型)底层消息中间件的养异（mq的差异）,降低切换成本，统一消息的编程模型）  (binder绑定器  channel频道 source和sink)    消费者和生产者的构建   分组消费与持久化
 #Sleuth分布式请求链路跟踪  链路的监测（sleuth+zipkin）
+#springcloud Alibaba:
+#    Nacos(注册中心+配置中心)  基础配置（自带动态刷新）  三级分类目录(Namespace+Group+DataId)   Nacos集群和持久化配置
