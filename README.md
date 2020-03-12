@@ -11,3 +11,4 @@
 #Sleuth分布式请求链路跟踪  链路的监测（sleuth+zipkin）
 #springcloud Alibaba:
 #    Nacos(注册中心+配置中心)  基础配置（自带动态刷新）  三级分类目录(Namespace+Group+DataId)   Nacos集群和持久化配置
+#    Sentinel熔断与限流    流控规则（流量）（快速失败、预热和排队等待）   降级规则（RT平均响应时间、异常比例和异常数）   热点规则（热点key限流）@SentinelResource     系统规则（系统自适应限流）(全局设置) 按资源名称限流+后续处理、按照UrI地址限流+后续处理、上面兜底方案面临的问题、客户自定义限流处理逻辑等等        服务熔断功能（Sentinel整合Ribbon+OpenFegin+fallback)   持久化规则
